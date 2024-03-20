@@ -1,0 +1,12 @@
+.clock {
+    font-size: 20px;
+    margin-top: 80px;
+    font-weight: bold;
+    color: #fff; /* Text color */
+    background-color: #7e57c2; /* Purple background color */
+    padding: 5px; /* Add padding for spacing */
+    border-radius: 20px; /* Add rounded corners */
+    width: fit-content; /* Adjust width to fit content */
+    margin: 0 auto 20px; /* Center horizontally */
+    position: relative; /* Set to relative positioning */
+  }

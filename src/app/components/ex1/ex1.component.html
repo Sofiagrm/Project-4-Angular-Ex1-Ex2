@@ -1,0 +1,47 @@
+<div id="text_display" [ngStyle]="{ 'justify-content': alignment }">
+    <span
+        [ngStyle]="{
+            'font-size': font_size_to_show,
+            'font-family': font_type_to_show,
+            'alignment' : alignment_to_show,
+        }"
+        id="text_content"
+        >{{ text_to_show | uppercase }}</span
+    >
+</div>
+
+<form id="press">
+    <input type="text" [(ngModel)]="text" name="text" />
+    <input type="number" [(ngModel)]="font_size" name="font_size" />
+    <select [(ngModel)]="font_type" name="font_type">
+        <option>Helvetica</option>
+        <option>Arial</option>
+        <option>Courier New</option>
+        <option>PT Sans</option>
+    </select>
+    <div>
+        <input
+            type="radio"
+            name="alignment"
+            value="left"
+            id="left"
+            (change)="onItemChange($event)" />
+        <label for="left">left</label>
+        <input
+            type="radio"
+            name="alignment"
+            checked
+            id="center"
+            value="center"
+            (change)="onItemChange($event)" />
+        <label for="center">center</label>
+        <input
+            type="radio"
+            name="alignment"
+            id="right"
+            value="right"
+            (change)="onItemChange($event)" />
+        <label for="right">right</label>
+    </div>
+    <button (click)="Press()">Press Here</button>
+</form>

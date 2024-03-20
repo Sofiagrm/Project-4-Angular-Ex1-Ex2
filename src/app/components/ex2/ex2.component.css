@@ -1,0 +1,58 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/* //styles calculadora */
+
+/* Estilize o formulário */
+form {
+  display: inline;
+}
+
+/* Estilize as entradas do formulário */
+input[type="number"],
+select {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #7e57c2; /* Borda roxa */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilize o botão do formulário */
+button {
+  padding: 8px 15px;
+  margin-right: 10px; /* Adicione margem à esquerda */
+  background-color: #7e57c2; /* Cor de fundo roxa */
+  color: #fff; /* Cor do texto branco */
+  border: none;
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer;
+}
+
+/* Estilize a div de memória */
+#memory {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px; /* Adicione margem superior */
+  max-width: 400px; /* Defina uma largura máxima */
+}
+
+/* Estilize a div de memória e seus filhos */
+#memory,
+#memory > * {
+  background-color: #7e57c2; /* Cor de fundo roxa */
+  color: #fff; /* Cor do texto branco */
+  padding: 10px; /* Adicione preenchimento */
+  border-radius: 5px; /* Cantos arredondados */
+  margin-bottom: 10px; /* Adicione margem inferior */
+}

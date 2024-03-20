@@ -1,0 +1,71 @@
+:host {
+  --content-padding: 10px;
+  --shadow-color: rgba(126, 87, 194, 0.5); /* Purple shadow color */
+}
+
+header {
+  display: block;
+  height: 60px;
+  padding: var(--content-padding);
+  box-shadow: 0px 5px 25px var(--shadow-color);
+}
+
+.content {
+  padding: var(--content-padding);
+}
+
+div#text_display {
+  width: 200px;
+  background-color: #7e57c2; /* Purple background color */
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+
+}
+
+span#text_content {
+  align-self: center;
+  color: #fff; /* White text color */
+}
+
+form#press {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+/* Input and select styles */
+input[type="text"],
+input[type="number"],
+select {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #7e57c2; /* Purple border color */
+  border-radius: 5px;
+}
+
+/* Radio button styles */
+input[type="radio"] {
+  margin: 0px;
+  margin-bottom: 5px; /* Add margin-bottom to separate radio buttons */
+}
+
+
+/* Button styles */
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  background-color: #7e57c2; /* Purple background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Label styles */
+label {
+  color: #7e57c2; /* Purple text color */
+  margin-right: 5px;
+}

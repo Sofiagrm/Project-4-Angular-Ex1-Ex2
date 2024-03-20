@@ -1,0 +1,14 @@
+<form style="display: inline">
+    <input type="number" [(ngModel)]="op_element_1" name="op_element_1" />
+    <select name="operation" [(ngModel)]="operation">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input type="number" [(ngModel)]="op_element_2" name="op_element_2" />
+    <button (click)="calc()">=</button>
+</form>
+<span>{{ result }}</span>
+
+<div id="memory" style="display: flex; flex-direction: column"></div>
